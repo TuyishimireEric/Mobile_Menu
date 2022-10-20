@@ -27,8 +27,39 @@ header {
   color: white;
 }
 
-#desktop-nav, #desktop-nav ul {
+.desktop-nav, .desktop-nav ul {
   display: none;
+}
+
+.desktop-nav.active {
+  display: block;
+  background-color: #172b4d;
+  color: #e5e5e5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  padding: 24px;
+}
+
+.desktop-nav.active img {
+  position: absolute;
+  right: 24px;
+  width: 24px;
+}
+
+.desktop-nav.active ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-top: 32px;
+}
+
+.desktop-nav.active ul a {
+  color: #f4f5f7;
 }
 
 #logo {
@@ -444,11 +475,11 @@ textarea {
     display: none;
   }
 
-  #desktop-nav {
+  .desktop-nav {
     display: block;
   }
 
-  #desktop-nav ul {
+  .desktop-nav ul {
     display: flex;
     margin-right: 10vw;
   }
